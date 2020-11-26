@@ -1,5 +1,7 @@
 package com.example.designpatterns.type1_constructpatterns.pattern_02_abstractfactory;
 
+import javax.xml.parsers.DocumentBuilderFactory;
+
 /**
  * @description: 抽象工厂模式测试类
  * @author: yanxiaotian
@@ -17,5 +19,7 @@ public class Test02 {
         System.out.println(product1A==product2A);
         System.out.println(product1B==product2B);
 
+        //源码查看
+        DocumentBuilderFactory.newInstance();
     }
 }

@@ -6,13 +6,15 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @description: 原型模式 实现类
  * @author: yanxiaotian
  * @create: 2020-11-18 14:26
  **/
-public class CarPrototype implements Cloneable, Serializable {
+public class CarPrototype<D> implements Cloneable, Serializable {
 
     private static final long serialVersionUID = 259945030576839396L;
     private  String name;
@@ -58,6 +60,14 @@ public class CarPrototype implements Cloneable, Serializable {
         /* 读出二进制流产生的新对象 */
         ObjectInputStream ois=new ObjectInputStream(new ByteArrayInputStream(bos.toByteArray()));
         return (CarPrototype)ois.readObject();
+    }
+
+    public D exercise() throws IOException,ClassNotFoundException{
+        ByteArrayOutputStream bos=new ByteArrayOutputStream();
+        ObjectOutputStream oos=new ObjectOutputStream(bos);
+        oos.writeObject(this);
+        ObjectInputStream ois=new ObjectInputStream(new ByteArrayInputStream(bos.toByteArray()));
+        return (D)ois.readObject();
     }
 
 }

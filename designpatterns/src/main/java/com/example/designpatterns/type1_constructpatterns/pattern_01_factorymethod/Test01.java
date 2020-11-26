@@ -1,5 +1,7 @@
 package com.example.designpatterns.type1_constructpatterns.pattern_01_factorymethod;
 
+import java.util.Calendar;
+
 /**
  * @description: 工厂方法模式测试类
  * @author: yanxiaotian
@@ -13,5 +15,10 @@ public class Test01 {
         IProduct productA=factoryA.getProduct();
         IProduct productB=factoryB.getProduct();
         System.out.println(productA.equals(productB));
+
+
+
+        //源码查看
+        Calendar calendar=Calendar.getInstance();
     }
 }
