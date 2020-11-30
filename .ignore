@@ -1,0 +1,21 @@
+#maven
+target/
+dependency-reduced-pom.xml
+pom.xml.versionsBackup
+.factorypath
+
+ 
+# IDEA
+.idea/
+*.ipr
+*.iml
+*.iws
+ 
+# temp ignore
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp
+
+.gitignore
