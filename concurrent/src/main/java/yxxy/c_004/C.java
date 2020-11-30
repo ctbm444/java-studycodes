@@ -34,7 +34,6 @@ public class C implements Runnable {
         System.out.println(Thread.currentThread().getName()+",count="+count);
     }*/
 
-    @Override
     public void run() {
         synchronized (C.class){
             for(int i=0;i<10;i++){

@@ -28,6 +28,5 @@ public class T implements Runnable{
         for(int i=0;i<20;i++){
             new Thread(t,"t"+i).start();
         }
-
     }
 }
