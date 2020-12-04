@@ -1,12 +1,7 @@
 package enumdemo;
 
-import com.google.common.collect.ImmutableMap;
-import org.springframework.expression.Operation;
-
-import java.util.ArrayList;
 import java.util.EnumSet;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
 
 /**

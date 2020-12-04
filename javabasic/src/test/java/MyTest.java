@@ -1,7 +1,9 @@
 import java.io.FileInputStream;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 
@@ -12,17 +14,10 @@ import java.util.function.Supplier;
  **/
 public class MyTest {
     public static void main(String[] args) throws Exception {
-        /*Runnable r1=()-> System.out.println("abc");
-        try(FileInputStream input=new FileInputStream("file.txt")){
-            int data=input.read();
-            while (data!=-1){
-                System.out.println((char)data);
-                data=input.read();
-            }
-        }*/
-        /*Predicate<MyTest> predicate=(MyTest m)->m.equals(null);
-        System.out.println(MyTest.method().get());*/
-        MyTest.print1();
+        int a=1;
+        a >>>= 1;
+        System.out.println(a);
+
     }
 
     public static Supplier<Integer> method(){
