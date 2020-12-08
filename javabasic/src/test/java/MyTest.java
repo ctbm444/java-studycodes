@@ -1,4 +1,5 @@
 import java.io.FileInputStream;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -17,7 +18,17 @@ public class MyTest {
         int a=1;
         a >>>= 1;
         System.out.println(a);
-
+        int m=0;
+        for(;;){
+            m++;
+            System.out.println(m);
+            if(m==10){
+                break;
+            }
+        }
+        Comparator comparator
+                =(Comparator<Map.Entry<String,Object>> &Serializable) (o1,o2) -> o1.getKey().compareTo(o2.getKey());
+        Comparator c=(o1,o2) -> Integer.parseInt(o1.toString())-Integer.parseInt(o2.toString());
     }
 
     public static Supplier<Integer> method(){

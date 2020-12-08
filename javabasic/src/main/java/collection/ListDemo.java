@@ -19,7 +19,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public class ListDemo {
     public static void main(String[] args) {
         /**
-         * 现randomaccess接口，get方法中判断如果是randomaccess实例，则使用下标二级制查找算法。查询O(1),增删效率低
+         * 实现randomaccess接口，get方法中判断如果是randomaccess实例，则使用下标二级制查找算法。查询O(1),增删效率低
          */
         ArrayList list=new ArrayList();
         LinkedList list1=new LinkedList();//双向链表 增删快，查询O(n)
