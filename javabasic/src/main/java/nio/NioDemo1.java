@@ -14,6 +14,7 @@ import java.nio.channels.FileChannel;
  **/
 public class NioDemo1 {
     public static void main(String[] args) {
+        //分配缓存
         ByteBuffer buf= ByteBuffer.allocate(1024);
         System.out.println("初始化");
         System.out.println("position:"+buf.position());
