@@ -19,7 +19,7 @@ public class ABAProblem {
         System.out.println(isSuccess);
 
 
-        //用AtomicStampedReference执行cas操作
+        //用AtomicStampedReference执行cas操作  啊手动阀手动阀
         AtomicInteger a1=new AtomicInteger(1);
         AtomicInteger a2=new AtomicInteger(2);
         AtomicStampedReference<AtomicInteger> reference=new AtomicStampedReference<>(a1,0);
