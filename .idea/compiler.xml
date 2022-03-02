@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="concurrent" />
+        <module name="javabasic" />
+        <module name="designpatterns" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="concurrent" target="8" />
+      <module name="designmodes" target="8" />
+      <module name="designpatterns" target="8" />
+      <module name="java-studycodes" target="8" />
+      <module name="javabasic" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="concurrent" options="-parameters" />
+      <module name="designmodes" options="-parameters" />
+      <module name="designpatterns" options="-parameters" />
+      <module name="javabasic" options="-parameters" />
+    </option>
+  </component>
+</project>
